@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3802eac6.css",
+    "main.js": "/static/js/main.b568e510.js",
+    "static/js/787.f8a0dea2.chunk.js": "/static/js/787.f8a0dea2.chunk.js",
+    "static/media/starskymountains.jpg": "/static/media/starskymountains.8a46a5f5f019d431ebfd.jpg",
+    "index.html": "/index.html",
+    "main.3802eac6.css.map": "/static/css/main.3802eac6.css.map",
+    "main.b568e510.js.map": "/static/js/main.b568e510.js.map",
+    "787.f8a0dea2.chunk.js.map": "/static/js/787.f8a0dea2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3802eac6.css",
+    "static/js/main.b568e510.js"
+  ]
+}
