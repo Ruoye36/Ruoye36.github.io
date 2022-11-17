@@ -8,10 +8,12 @@ body{
   /* font-family: 'Baskervville', serif; */
   /* font-family: 'Italiana', serif; */
   font-family: 'Montserrat', sans-serif;
+  /* background-color: #3d6069; */
   background-image: url("./images/starskymountains.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  /* background-size: cover; */
   text-shadow: black 0 0 7px;
 }
 p{
