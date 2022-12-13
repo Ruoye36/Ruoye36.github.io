@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1ae84e0.css",
-    "main.js": "/static/js/main.b568e510.js",
+    "main.css": "/static/css/main.db031e45.css",
+    "main.js": "/static/js/main.f4dda3df.js",
     "static/js/787.f8a0dea2.chunk.js": "/static/js/787.f8a0dea2.chunk.js",
     "static/media/starskymountains.jpg": "/static/media/starskymountains.d55ba1b95d62564f6596.jpg",
     "index.html": "/index.html",
-    "main.a1ae84e0.css.map": "/static/css/main.a1ae84e0.css.map",
-    "main.b568e510.js.map": "/static/js/main.b568e510.js.map",
+    "main.db031e45.css.map": "/static/css/main.db031e45.css.map",
+    "main.f4dda3df.js.map": "/static/js/main.f4dda3df.js.map",
     "787.f8a0dea2.chunk.js.map": "/static/js/787.f8a0dea2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1ae84e0.css",
-    "static/js/main.b568e510.js"
+    "static/css/main.db031e45.css",
+    "static/js/main.f4dda3df.js"
   ]
 }
