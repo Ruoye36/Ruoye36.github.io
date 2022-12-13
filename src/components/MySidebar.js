@@ -1,18 +1,21 @@
 import React, {Component} from "react";
-// import Dropdown from 'react-bootstrap/Dropdown';
-import {ProSidebarProvider} from "react-pro-sidebar";
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+
+import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
 
 const Home=()=><h1>Home</h1>;
 
-function MyCsJourneyContents(){
+function MySidebar(){
+
+    const { collapseSidebar } = useProSidebar();
+
     return (
-        <div clasName="table-of-contents">
-        <ProSidebarProvider>
+        <div className="table-of-contents">
+        
             <Sidebar toggled="true">
-            <Menu className="table-of-contents">
-            <MenuItem routerLink={<Link to="/" />}>← Home</MenuItem>
+            <Menu>
+            <span style={{display:"flex"}}><MenuItem routerLink={<Link to="/" />}>← Home</MenuItem><button onClick={() => collapseSidebar()}>Collapse</button></span>
+                
             <MenuItem routerLink={<Link to="/mycsjourney/sdemethodology" />}>SDE Methodology</MenuItem>
                 <SubMenu defaultOpen="true"label="Programming "> 
                     <SubMenu label="Languages">
@@ -35,10 +38,11 @@ function MyCsJourneyContents(){
                     <MenuItem routerLink={<Link to="/mycsjourney/cs/misc" />}>Miscellaneous</MenuItem>
                 </SubMenu>
             </Menu>
+
             </Sidebar>
-        </ProSidebarProvider>
+
         </div>
       );
 }
 
-export default MyCsJourneyContents;
+export default MySidebar;

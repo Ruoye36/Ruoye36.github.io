@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Italiana&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 .App {
   text-align: center;
 }
@@ -131,6 +136,85 @@ hr{
 }
 /***** Main Page end *****/
 
+/***** Sidebar start *****/
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #3d6169;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #638b9c;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #b8d2ce;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #3d6169;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #bdc3c7;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #ffffff;
+}
+.menu-subitem{
+  padding-left:1rem;
+}
+/***** Sidebar end *****/
+
 /***** My Pages start *****/
 .my {   
   background-color:white;
@@ -139,9 +223,12 @@ hr{
   font-size:medium;
 }
 .table-of-contents{
-  color: #3d6069;
+  position: absolute;
+  /* top: 40px; 
+  left: 40px; */
+  /* color: #3d6069;
+  background-color: #bdc3c7; */
   font-weight:500;
-  font-size:0.7rem;
 }
 .substrated{
   margin:1% 1% 1% 1%;
@@ -159,7 +246,8 @@ hr{
   display: flex;
 }
 .cs-mindmap-title{
-  margin: 3% 3% 3% 3%;
+  padding: 2rem 4rem;
+  font-size: larger;
 }
 .mindmap{
   margin: auto 3% auto 3%;
