@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyCsJourney from "./pages/MyCsJourney/MyCsJouney.js";
 import MyProjects from "./pages/MyProjects/MyProjects.js";
 import MyThoughts from "./pages/MyThoughts/MyThoughts.js";
+import SingleThought from './pages/MyThoughts/ThoughtDetail';
 import SDEmethodology from "./pages/MyCsJourney/CSsubpages/SDEmethogology";
 import Cplusplus  from "./pages/MyCsJourney/CSsubpages/Cplusplus";
 import Java from "./pages/MyCsJourney/CSsubpages/Java";
@@ -42,6 +43,7 @@ root.render(
       <Route path="/mycsjourney/cs/database" element={<Database />} />
       <Route path="/mycsjourney/cs/machine-learning" element={<MachineLearning />} />
       <Route path="/mycsjourney/cs/misc" element={<Miscellaneous />} />
+      <Route path="/singlethought" element={<SingleThought />} />
     </Routes>
   </BrowserRouter>
 );
